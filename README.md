@@ -34,4 +34,11 @@ There are 3 major components in this pipeline
   - **LoadDimensionOperator** -- Load the dimension data from the staging table to fact table 
   - **DataQualityOperator** -- Check if the table consists data 
 
+## DAG
+In the DAG, add default parameters according to these guidelines
 
+The DAG does not have dependencies on past runs
+- On failure, the task are retried 3 times
+- Retries happen every 5 minutes
+- Catchup is turned off
+- Do not email on retry
