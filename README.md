@@ -42,3 +42,6 @@ The DAG does not have dependencies on past runs
 - Retries happen every 5 minutes
 - Catchup is turned off
 - Do not email on retry
+
+The DAG running sequence should be as follows
+![image](https://user-images.githubusercontent.com/38469208/154936539-bfea9e66-75f7-47b6-a441-43871d445a3a.png)
